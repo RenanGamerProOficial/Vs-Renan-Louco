@@ -29,7 +29,7 @@ using StringTools;
 
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Vs Renan Louco',  'Note Colors', 'Controls' #if android , 'Android Controls' #end, 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay'];
+	var options:Array<String> = ['Vs Renan Louco',  'Note Colors', 'Controls' #if android , 'Android Controls' #end, 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
