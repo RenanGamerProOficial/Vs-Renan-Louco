@@ -27,7 +27,7 @@ import Controls;
 
 using StringTools;
 
-class GameplaySettingsSubState extends BaseOptionsMenu
+class VsRenanLoucoSubState extends BaseOptionsMenu
 {
 	public function new()
 	{
