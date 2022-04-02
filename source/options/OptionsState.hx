@@ -36,6 +36,8 @@ class OptionsState extends MusicBeatState
 
 	function openSelectedSubstate(label:String) {
 		switch(label) {
+                        case 'Vs Renan Louco':
+                                openSubState(new options.VsRenanLoucoSubState());
 			case 'Note Colors':
 				openSubState(new options.NotesSubState());
 			case 'Controls':
