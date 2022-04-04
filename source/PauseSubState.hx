@@ -83,14 +83,14 @@ class PauseSubState extends MusicBeatSubstate
 		levelInfo.updateHitbox();
 		add(levelInfo);
 
-		// var levelDifficulty:FlxText = new FlxText(20, 15 + 32, 0, "", 32);
-		// levelDifficulty.text += CoolUtil.difficultyString();
-		// levelDifficulty.scrollFactor.set();
-		// levelDifficulty.setFormat(Paths.font('vcr.ttf'), 32);
-		// levelDifficulty.updateHitbox();
-		// add(levelDifficulty);
+		var levelDifficulty:FlxText = new FlxText(20, 15 + 32, 0, "", 32);
+		levelDifficulty.text += CoolUtil.difficultyString();
+		levelDifficulty.scrollFactor.set();
+		levelDifficulty.setFormat(Paths.font('vcr.ttf'), 32);
+		levelDifficulty.updateHitbox();
+		add(levelDifficulty);
 
-		var blueballedTxt:FlxText = new FlxText(20, 15 + 32, 0, "", 32);
+		var blueballedTxt:FlxText = new FlxText(20, 15 + 64, 0, "", 32);
 		blueballedTxt.text = "Blueballed: " + PlayState.deathCounter;
 		blueballedTxt.scrollFactor.set();
 		blueballedTxt.setFormat(Paths.font('vcr.ttf'), 32);
@@ -223,9 +223,6 @@ class PauseSubState extends MusicBeatSubstate
 			{
 				case "Resume":
 					close();
-				case 'Change Difficulty':
-					menuItems = difficultyChoices;
-					regenMenu();
 				case 'Toggle Practice Mode':
 					PlayState.instance.practiceMode = !PlayState.instance.practiceMode;
 					PlayState.changedDifficulty = true;
